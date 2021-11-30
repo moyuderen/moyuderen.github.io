@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 鱼
+title: 鱼池子
 subtitle: ''
 description: ''
 keywords:
 author: moyuderen
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -97,12 +97,10 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: hexo-theme-fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github.com/moyuderen/moyuderen.github.io
-  branch: blog
-  message: '更新'
