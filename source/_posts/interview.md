@@ -2,6 +2,7 @@
 title: interview
 tags:
   - 面试
+  - 前端
 categories:
   [面试]
 comments: true
