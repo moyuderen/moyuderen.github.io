@@ -4,6 +4,85 @@
   
   
   <entry>
+    <title>科学上网</title>
+    <link href="/2021/12/02/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <url>/2021/12/02/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
+    
+    <content type="html"><![CDATA[<h2 id="windows服务器搭建ss"><a href="#windows服务器搭建ss" class="headerlink" title="windows服务器搭建ss"></a>windows服务器搭建ss</h2><p>最近朋友买了windows服务器，帮忙搭了个ss</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol><li><p><a href="http://1.73207.com/20191021/%E5%9C%A8windows%E4%B8%8B%E6%90%AD%E5%BB%BAshadowsockspython%E6%9C%8D%E5%8A%A1%E5%99%A8/">在Windows下搭建Shadowsocks(Python)服务器</a></p></li><li><p><a href="https://www.sockscap64.com/forums/topic/%E5%9C%A8windows%E4%B8%8A%E6%90%AD%E5%BB%BA-shadowsocks%E6%9C%8D%E5%8A%A1%E7%AB%AF/">在Windows上搭建 Shadowsocks服务端</a></p></li><li><p><a href="https://www.cnblogs.com/crwy/p/10392502.html">SSR配置：记录所踩过的坑</a></p></li><li><p><a href="https://liqiang.io/post/aes-256-gcm-not-supported-solution-50fd04e3">aes-256-gcm not supported</a></p></li><li><p><a href="https://www.ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=188059">求教如何让ss客户端支持aes-256-gcm加密方式</a></p></li><li><p><a href="https://my.oschina.net/kcw/blog/3195906">censtos 7 安装ss 支持aes-256-gcm 加密协议</a></p></li><li><p><a href="https://github.com/shadowsocks/shadowsocks/tree/master">shadowsocks</a></p></li></ol><h2 id="Ubuntu本地终端-安装shadowsocks"><a href="#Ubuntu本地终端-安装shadowsocks" class="headerlink" title="Ubuntu本地终端 安装shadowsocks"></a>Ubuntu本地终端 安装shadowsocks</h2><h3 id="参考文章-1"><a href="#参考文章-1" class="headerlink" title="参考文章"></a>参考文章</h3><ol><li><a href="https://www.freedidi.com/747.html">Ubuntu 安装shadowsocks</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>科学上网</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>github</title>
+    <link href="/2021/12/02/github/"/>
+    <url>/2021/12/02/github/</url>
+    
+    <content type="html"><![CDATA[<h2 id="github在线编辑"><a href="#github在线编辑" class="headerlink" title="github在线编辑"></a><a href="https://github.com/">github</a>在线编辑</h2><div class="note note-primary">            <p><a href="https://github.com/ElemeFE/element">https://github.com/ElemeFE/element</a> 改为 <a href="https://github.dev/ElemeFE/element">https://github.dev/ElemeFE/element</a> 即可在线查看编辑代码</p>          </div><!-- <p class="note note-info">https://github.com/ElemeFE/element 改为 https://github.dev/ElemeFE/element 即可在线查看编辑代码</p> -->]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>vscode小技巧</title>
+    <link href="/2021/12/02/vscode%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <url>/2021/12/02/vscode%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    
+    <content type="html"><![CDATA[<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul><li><p>折叠展开代码</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># mac下，command + k + 0，折叠所有代码块</span></span><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 0是代码折叠级别，同理可以换用1，2，3 等</span></span><br>command + k + 0<br>command + k + 1<br>command + k + j ## 展开所有代码块<br><span class="hljs-meta"></span><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 折叠 光标所在代码块</span></span><br>command + option + [ <br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 展开 光标所在代码块</span></span><br>command + option + ] <br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vscode</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>缠中说禅</title>
     <link href="/2021/12/02/%E7%BC%A0%E4%B8%AD%E8%AF%B4%E7%A6%85/"/>
     <url>/2021/12/02/%E7%BC%A0%E4%B8%AD%E8%AF%B4%E7%A6%85/</url>
@@ -35,7 +114,7 @@
   
   
   <entry>
-    <title>interview</title>
+    <title>前端面试</title>
     <link href="/2021/12/01/interview/"/>
     <url>/2021/12/01/interview/</url>
     
@@ -44,7 +123,9 @@
     
     <categories>
       
-      <category>面试</category>
+      <category>技术</category>
+      
+      <category>前端</category>
       
     </categories>
     
