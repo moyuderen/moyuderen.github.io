@@ -8,7 +8,7 @@ categories:
 comments: true
 date: 2021-12-01 19:18:43
 permalink:
-index_img: https://static.zkqiang.cn/images/20191231163859.png-cover
+index_img: 
 ---
 
 

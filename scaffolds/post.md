@@ -7,5 +7,5 @@ categories:
     - [Diary, PlayStation]
 permalink: 
 comments: true
-index_img: https://static.zkqiang.cn/images/20191231163859.png-cover
+index_img:
 ---

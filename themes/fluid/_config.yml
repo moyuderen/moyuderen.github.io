@@ -510,7 +510,7 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: https://static.zkqiang.cn/images/20191231163859.png-cover
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -527,7 +527,7 @@ post:
       # 格式参照 ISO-8601 日期格式化
       # ISO-8601 date format
       # See: http://momentjs.cn/docs/#/parsing/string-format/
-      format: "LL a"
+      format: "YYYY-MM-DD HH:mm:ss"
 
     # 字数统计
     # Word count
@@ -581,7 +581,7 @@ post:
     headingSelector: "h1,h2,h3,h4,h5,h6"
     # 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开
     # Collapse depth. If 0, all headings collapsed. If greater than 0, it will be expanded by default if there are sub headings
-    collapseDepth: 0
+    collapseDepth: 7
 
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
