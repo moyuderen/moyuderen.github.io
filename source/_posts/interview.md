@@ -1,10 +1,11 @@
 ---
-title: interview
+title: 前端面试
 tags:
   - 面试
   - 前端
 categories:
-  [面试]
+  - 技术
+  - 前端
 comments: true
 date: 2021-12-01 19:18:43
 permalink:
