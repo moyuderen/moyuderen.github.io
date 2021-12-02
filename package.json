@@ -8,9 +8,9 @@
     "serve": "hexo server",
     "create": "npx hexo new",
     "page": "npx hexo new page",
-    "post": "npx hexo new post",
+    "post": "npx hexo new post -p",
     "draft": "npx hexo new draft",
-    "publish": "npx hexo publish draft"
+    "publish": "npx hexo publish post"
   },
   "hexo": {
     "version": "5.4.0"

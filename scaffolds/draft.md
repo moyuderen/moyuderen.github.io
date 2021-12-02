@@ -1,9 +1,13 @@
 ---
 title: {{ title }}
+date: {{ date }}
 tags:
     - Games
 categories: 
-    - [Diary, PlayStation]
+    - Diary
+    - PlayStation
 permalink: 
 comments: true
+index_img:
+hide: false
 ---
