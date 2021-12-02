@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>抓包工具</title>
+    <link href="/2021/12/02/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"/>
+    <url>/2021/12/02/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/</url>
+    
+    <content type="html"><![CDATA[<h2 id="介绍几种常用的抓包工具"><a href="#介绍几种常用的抓包工具" class="headerlink" title="介绍几种常用的抓包工具"></a>介绍几种常用的抓包工具</h2><h3 id="1-Charles-中文名青花瓷，最常用的抓包工具"><a href="#1-Charles-中文名青花瓷，最常用的抓包工具" class="headerlink" title="1. Charles,中文名青花瓷，最常用的抓包工具"></a>1. Charles,中文名青花瓷，最常用的抓包工具</h3><h3 id="2-whistle-工作中经常用到"><a href="#2-whistle-工作中经常用到" class="headerlink" title="2. whistle 工作中经常用到"></a>2. whistle 工作中经常用到</h3><h4 id="whistle文档"><a href="#whistle文档" class="headerlink" title="whistle文档"></a><a href="https://wproxy.org/whistle/questions.html">whistle文档</a></h4><h3 id="3-spy-debugger"><a href="#3-spy-debugger" class="headerlink" title="3. spy-debugger"></a>3. spy-debugger</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>npm install spy-debugger -g</code></p><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>(默认端口：9888)<br><code>spy-debugger -p 8888</code></p><h4 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h4><ul><li><p>设置外部代理（默认使用AnyProxy）<br>  <code>spy-debugger -e &lt;http://127.0.0.1:8888&gt;</code><br>  spy-debugger内置AnyProxy提供抓包功能，但是也可通过设置外部代理和其它抓包代理工具一起使用，如：Charles、Fiddler。</p></li><li><p>设置页面内容为可编辑模式</p><p>  该功能使页面内容修改更加直观方便。 (默认： false)<br>  <code>spy-debugger -w true</code><br>  内部实现原理：在需要调试的页面内注入代码：document.body.contentEditable=true。暂不支持使用了iscroll框架的页面。</p></li><li><p>是否允许weinre监控iframe加载的页面</p><p>  (默认： false)<br>  <code>spy-debugger -i true</code></p></li><li><p>是否只拦截浏览器发起的https请求</p><p>  (默认： true)<br>  <code>spy-debugger -b false</code><br>  有些浏览器发出的connect请求没有正确的携带userAgent，这个判断有时候会出错，如UC浏览器。这个时候需要设置为false。大多数情况建议启用默认配置：true，由于目前大量App应用自身（非WebView）发出的请求会使用到SSL pinning技术，自定义的证书将不能通过app的证书校验。</p></li><li><p>是否允许HTTP缓存</p><p>  (默认： false)<br>  <code>spy-debugger -c true</code></p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>抓包</tag>
+      
+      <tag>工具</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Git</title>
     <link href="/2021/12/02/Git/"/>
     <url>/2021/12/02/Git/</url>
