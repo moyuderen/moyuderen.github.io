@@ -16,21 +16,21 @@
   <meta name="description" content="">
   <meta name="author" content="moyuderen">
   <meta name="keywords" content="">
-  <meta name="description" content="nginx基本操作 nginx目录（mac系统） cd &#x2F;usr&#x2F;local&#x2F;etc&#x2F;nginx  查看启动的nginx ps -ef | grep nginx  启动nginx nginx 没有任何输出代表启动成功（无输出就是最好的）  检查nginx配置 nginx -t  nginx重新加载配置 nginx -s reload  退出nginx nginx -s qiut  停止nginx">
+  <meta name="description" content="背景折腾了一晚上 在网上找了神作塞尔达荒野之息的高清图片，更换了博客的banner图，放在了博客的静态资源下面 部署后发现图片很大，加载特别慢 so, 灵机一动使用了在线压缩工具tinify对图片进行压缩（尝试几次发现压缩效果已经不是很明显了，图片依然很大）。内心os: 王德发? 熬不住了先睡了。 第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx">
-<meta property="og:url" content="https://moyuderen.github.io/2021/12/02/%E6%8A%80%E6%9C%AF/nginx/index.html">
+<meta property="og:title" content="免费CDN github+jsdelivr">
+<meta property="og:url" content="https://moyuderen.github.io/2021/12/03/%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9CDN%20github+jsdelivr/index.html">
 <meta property="og:site_name" content="鱼池子">
-<meta property="og:description" content="nginx基本操作 nginx目录（mac系统） cd &#x2F;usr&#x2F;local&#x2F;etc&#x2F;nginx  查看启动的nginx ps -ef | grep nginx  启动nginx nginx 没有任何输出代表启动成功（无输出就是最好的）  检查nginx配置 nginx -t  nginx重新加载配置 nginx -s reload  退出nginx nginx -s qiut  停止nginx">
+<meta property="og:description" content="背景折腾了一晚上 在网上找了神作塞尔达荒野之息的高清图片，更换了博客的banner图，放在了博客的静态资源下面 部署后发现图片很大，加载特别慢 so, 灵机一动使用了在线压缩工具tinify对图片进行压缩（尝试几次发现压缩效果已经不是很明显了，图片依然很大）。内心os: 王德发? 熬不住了先睡了。 第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-02T13:58:29.000Z">
+<meta property="article:published_time" content="2021-12-03T14:21:24.000Z">
 <meta property="article:modified_time" content="2021-12-03T07:05:52.003Z">
 <meta property="article:author" content="moyuderen">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="nginx">
+<meta property="article:tag" content="CDN">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>nginx - 鱼池子</title>
+  <title>免费CDN github+jsdelivr - 鱼池子</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -181,7 +181,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="nginx">
+            <span class="h2" id="subtitle" title="免费CDN github+jsdelivr">
               
             </span>
 
@@ -191,8 +191,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-12-02 13:58" pubdate>
-        2021-12-02 13:58:29
+      <time datetime="2021-12-03 14:21" pubdate>
+        2021-12-03 14:21:24
       </time>
     </span>
   
@@ -202,7 +202,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      201 字
+      1.1k 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      3 分钟
     </span>
   
 
@@ -248,7 +248,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">nginx</h1>
+            <h1 style="display: none">免费CDN github+jsdelivr</h1>
             
               <p class="note note-info">
                 
@@ -257,23 +257,37 @@
               </p>
             
             <div class="markdown-body">
-              <h2 id="nginx基本操作"><a href="#nginx基本操作" class="headerlink" title="nginx基本操作"></a>nginx基本操作</h2><ol>
-<li><p>nginx目录（mac系统）<br> <code>cd /usr/local/etc/nginx</code></p>
+              <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>折腾了一晚上 在网上找了神作<strong>塞尔达荒野之息</strong>的高清图片，更换了博客的banner图，放在了博客的静态资源下面</p>
+<p>部署后发现图片很大，加载特别慢</p>
+<p>so, 灵机一动使用了在线压缩工具<a target="_blank" rel="noopener" href="https://tinify.cn/">tinify</a>对图片进行压缩（尝试几次发现压缩效果已经不是很明显了，图片依然很大）。内心os: 王德发? 熬不住了先睡了。</p>
+<p>第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天（真的是坑）</p>
+<p>接着找了很多，不是需要注册或者实名备案，总之很麻烦。</p>
+<p>最后找到了github+jsdelivr的方案</p>
+<h2 id="如何白嫖CDN"><a href="#如何白嫖CDN" class="headerlink" title="如何白嫖CDN"></a>如何白嫖CDN</h2><h3 id="1-新建一个github仓库-ed-CDN"><a href="#1-新建一个github仓库-ed-CDN" class="headerlink" title="1. 新建一个github仓库 ed:CDN"></a>1. 新建一个github仓库 ed:CDN</h3><ul>
+<li><p>里面随便上传几个图片，打开图片的目录 eg: <a target="_blank" rel="noopener" href="https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png">https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png</a></p>
 </li>
-<li><p>查看启动的nginx<br> <code>ps -ef | grep nginx</code></p>
-</li>
-<li><p>启动nginx<br> <code>nginx</code><br> 没有任何输出代表启动成功（无输出就是最好的）</p>
-</li>
-<li><p>检查nginx配置<br> <code>nginx -t</code></p>
-</li>
-<li><p>nginx重新加载配置<br> <code>nginx -s reload</code></p>
-</li>
-<li><p>退出nginx<br> <code>nginx -s qiut</code></p>
-</li>
-<li><p>停止nginx<br> <code>nginx -s stop</code></p>
-</li>
-<li><p>重启nginx<br> <code>nginx -s restart</code></p>
-</li>
+<li><p>打一个releases包</p>
+  <div class="note note-warning">
+            <p>注意：这一步是必须的</p>
+          </div></li>
+</ul>
+<h3 id="2-用jsdelivr地址替换github上的地址（releases包的地址）"><a href="#2-用jsdelivr地址替换github上的地址（releases包的地址）" class="headerlink" title="2. 用jsdelivr地址替换github上的地址（releases包的地址）"></a>2. 用jsdelivr地址替换github上的地址（releases包的地址）</h3><ul>
+<li><code>https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/srd-about.png</code><br>替换</li>
+<li><code>https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png</code></li>
+</ul>
+<h3 id="3-原理"><a href="#3-原理" class="headerlink" title="3. 原理"></a>3. 原理</h3><p><code>https://github.com/$&#123;yourUsername&#125;/$&#123;repositoryName&#125;/$&#123;branchName&#125;/$&#123;filePathName&#125;</code></p>
+<p><code>https://cdn.jsdelivr.net/gh/$&#123;yourUsername&#125;/$&#123;repositoryName&#125;[$&#123;@version&#125;]/$&#123;filePathName&#125;</code></p>
+<div class="note note-warning">
+            <p>备注：<br>    <code>@version</code>是release包（tag）的名称如@0.0.2或者@latest</p><ol><li>如果没有version参数，默认为@latest。 eg: <code>https://cdn.jsdelivr.net/gh/moyuderen/CDN@0.0.3/moyuderen/blog/srd-about.png</code></li><li>可以用version来区分版本</li></ol>
+          </div>
+
+<div class="note note-danger">
+            <p>重要：每次更新仓库内容，必须重新创建release包（新的tag），最新的资源才能生效（生效有一点点延迟，稍等就可以啦）</p>
+          </div>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/?docs=gh">jsdelivr官网</a></li>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1847396">Jsdelivr+Github = 免费CDN??</a></li>
 </ol>
 
             </div>
@@ -294,7 +308,7 @@
                     
                       <a class="hover-with-bg" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
                     
-                      <a class="hover-with-bg" href="/tags/nginx/">nginx</a>
+                      <a class="hover-with-bg" href="/tags/CDN/">CDN</a>
                     
                   </div>
                 
@@ -311,18 +325,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/12/02/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91%E5%90%AF%E5%8A%A8https/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">本地开发启动https</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/12/02/%E6%8A%80%E6%9C%AF/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/">
-                        <span class="hidden-mobile">抓包工具</span>
+                      <a href="/2021/12/02/%E7%81%B5%E9%AD%82%E5%9C%A8%E8%B7%AF%E4%B8%8A/%E5%86%A5%E6%83%B3/">
+                        <span class="hidden-mobile">冥想</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
