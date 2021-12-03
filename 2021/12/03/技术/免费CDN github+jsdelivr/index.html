@@ -24,7 +24,7 @@
 <meta property="og:description" content="背景折腾了一晚上 在网上找了神作塞尔达荒野之息的高清图片，更换了博客的banner图，放在了博客的静态资源下面 部署后发现图片很大，加载特别慢 so, 灵机一动使用了在线压缩工具tinify对图片进行压缩（尝试几次发现压缩效果已经不是很明显了，图片依然很大）。内心os: 王德发? 熬不住了先睡了。 第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-03T14:21:24.000Z">
-<meta property="article:modified_time" content="2021-12-03T07:05:52.003Z">
+<meta property="article:modified_time" content="2021-12-03T07:06:37.570Z">
 <meta property="article:author" content="moyuderen">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="CDN">
@@ -252,7 +252,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021-12-03 07:05:52
+                  本文最后更新于：2021-12-03 07:06:37
                 
               </p>
             
@@ -263,7 +263,7 @@
 <p>第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天（真的是坑）</p>
 <p>接着找了很多，不是需要注册或者实名备案，总之很麻烦。</p>
 <p>最后找到了github+jsdelivr的方案</p>
-<h2 id="如何白嫖CDN"><a href="#如何白嫖CDN" class="headerlink" title="如何白嫖CDN"></a>如何白嫖CDN</h2><h3 id="1-新建一个github仓库-ed-CDN"><a href="#1-新建一个github仓库-ed-CDN" class="headerlink" title="1. 新建一个github仓库 ed:CDN"></a>1. 新建一个github仓库 ed:CDN</h3><ul>
+<h2 id="如何白嫖CDN"><a href="#如何白嫖CDN" class="headerlink" title="如何白嫖CDN"></a>如何白嫖CDN</h2><h3 id="1-新建一个github仓库。-eg-CDN"><a href="#1-新建一个github仓库。-eg-CDN" class="headerlink" title="1. 新建一个github仓库。 eg:CDN"></a>1. 新建一个github仓库。 eg:CDN</h3><ul>
 <li><p>里面随便上传几个图片，打开图片的目录 eg: <a target="_blank" rel="noopener" href="https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png">https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png</a></p>
 </li>
 <li><p>打一个releases包</p>
