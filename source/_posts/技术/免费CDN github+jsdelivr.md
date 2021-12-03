@@ -66,3 +66,4 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 
 1. [jsdelivr官网](https://www.jsdelivr.com/?docs=gh)
 2. [Jsdelivr+Github = 免费CDN??](https://cloud.tencent.com/developer/article/1847396)
+3. [自动使用jsdelivr CDN 加速hexo的图片等静态资源加载](https://cwiki.guazi.com/pages/viewpage.action?pageId=262483489)
