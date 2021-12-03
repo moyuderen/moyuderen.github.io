@@ -28,7 +28,7 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 
 ## 如何白嫖CDN
 
-### 1. 新建一个github仓库 ed:CDN
+### 1. 新建一个github仓库。 eg:CDN
 
 - 里面随便上传几个图片，打开图片的目录 eg: <https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png>
 
