@@ -52,7 +52,7 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 
 {% note warning %}
 备注：
-    `@version`是release包（tag）的名称如@0.0.2或者@latest
+`@version`是release包（tag）的名称如@0.0.2或者@latest
 
 1. 如果没有version参数，默认为@latest。 eg: `https://cdn.jsdelivr.net/gh/moyuderen/CDN@0.0.3/moyuderen/blog/srd-about.png`
 2. 可以用version来区分版本
@@ -66,4 +66,4 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 
 1. [jsdelivr官网](https://www.jsdelivr.com/?docs=gh)
 2. [Jsdelivr+Github = 免费CDN??](https://cloud.tencent.com/developer/article/1847396)
-3. [自动使用jsdelivr CDN 加速hexo的图片等静态资源加载](https://cwiki.guazi.com/pages/viewpage.action?pageId=262483489)
+3. [自动使用jsdelivr CDN 加速hexo的图片等静态资源加载](https://renzibei.com/2020/07/12/%E4%BD%BF%E7%94%A8jsdelivr-CDN-%E5%8A%A0%E9%80%9Fhexo%E7%9A%84%E5%9B%BE%E7%89%87%E7%AD%89%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD/)
