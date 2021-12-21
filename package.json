@@ -9,6 +9,7 @@
     "create": "npx hexo new",
     "page": "npx hexo new page",
     "post": "npx hexo new post -p",
+    "new": "npx hexo new post -p",
     "draft": "npx hexo new draft",
     "publish": "npx hexo publish post"
   },
