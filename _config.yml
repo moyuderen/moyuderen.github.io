@@ -104,3 +104,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"
