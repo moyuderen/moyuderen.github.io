@@ -12,4 +12,6 @@ permalink:
 index_img:
 ---
 
-## [谷歌浏览器打开链接，如何不是覆盖当前页面而自动跳转到新标签页?](https://www.google.com.hk/)
+## chrome的小技巧
+
+### 1. [谷歌浏览器打开链接，如何不是覆盖当前页面而自动跳转到新标签页?](https://www.google.com.hk/)
