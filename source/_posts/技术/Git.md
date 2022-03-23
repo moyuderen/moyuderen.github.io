@@ -396,6 +396,19 @@ revert 用于线上回滚代码
 
  最后修改代码提交试试吧
 
+### 常见报错
+
+- Git：git clone时报错remote: HTTP Basic: Access denied fatal: Authentication failed for
+
+    原因：重置了密码或拉取代码时输错密码导致操作失败，但再次登录时未再弹出重新输入密码界面。
+
+    解决方案：在git控制台输入以下命令，然后git clone 时在弹出的界面正确输入账户名和密码即可。
+
+    ``` bash
+    git config --system --unset credential.helper
+    git config --global credential.helper store
+    ```
+
 ### 参考文章
 
 1. [配置多个Git账号](https://blog.csdn.net/q13554515812/article/details/83506172)
