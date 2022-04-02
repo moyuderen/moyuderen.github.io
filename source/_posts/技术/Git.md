@@ -31,22 +31,23 @@ index_img:
 
 ### git修改本地和远程分支名称
 
-    ```Bash
-    # 本地分支重命名
-    git branch -m oldName newName
+```Bash
+# 本地分支重命名
+git branch -m oldName newName
 
-    # 将重命名后的分支推送到远程
-    git push origin newName
-    # 注意： 把origin改为自己的名称（一般默认就为origin）
-    ## 或者git push --set-upstream origin newName # 或者git push -u origin newName
+# 将重命名后的分支推送到远程
+git push origin newName
+# 注意： 把origin改为自己的名称（一般默认就为origin）
+## 或者git push --set-upstream origin newName # 或者git push -u origin newName
 
-    # 删除远程的旧分支
-    git push origin :oldName
-    # 或者 git push --delete origin oldName
-    
-    ```
-    > 参考： [git 修改本地和远程分支名称](https://blog.csdn.net/zhangxiaoyang0/article/details/82454209)
-    > 参考： [Git分支重命名](https://juejin.cn/post/6893041983674122254)
+# 删除远程的旧分支
+git push origin :oldName
+# 或者 git push --delete origin oldName
+
+```
+
+> 参考： [git 修改本地和远程分支名称](https://blog.csdn.net/zhangxiaoyang0/article/details/82454209)
+> 参考： [Git分支重命名](https://juejin.cn/post/6893041983674122254)
 
 ## .gitignore
 
