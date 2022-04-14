@@ -35,7 +35,7 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 - 打一个releases包
 
     {% note warning %}
-    注意：这一步是必须的
+    注意：这一步是必须的（在使用tag时是必须的），后面有解析不使用tag时的替换规则
     {% endnote %}
 
 ### 2. 用jsdelivr地址替换github上的地址（releases包的地址）
@@ -60,6 +60,34 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 
 {% note danger %}
 重要：每次更新仓库内容，必须重新创建release包（新的tag），最新的资源才能生效（生效有一点点延迟，稍等就可以啦）
+
+更新：2022.04.14 更新不使用tag的方式如下
+{% endnote %}
+
+### 4. 不使用打tag的方式
+
+#### 解析 `https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png`
+
+{% note warning %}
+解析 `https://github.com/moyuderen/CDN/blob/main/moyuderen/blog/srd-about.png`
+
+1. `https://github.com/moyuderen/CDN`:  github地址 + username + 仓库名称
+2. `blob`:  在直接打开git的文件时会地址会自动添加这个地址，表示打开的是二进制文件
+3. `main`:  仓库的当前分支
+4. `/moyuderen/blog/srd-about.png`:  参考文件的地址
+{% endnote %}
+
+则可替换为 `https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/srd-about.png`
+
+{% note warning %}
+解析 `https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/srd-about.png`
+
+1. `https://github.com/` 被替换为 `https://cdn.jsdelivr.net/gh/`
+2. `moyuderen` 保持不变
+3. `CDN` 保持不变
+4. `blob` 删除二进制的目录
+5. `main`:  删除分支名称
+6. `/moyuderen/blog/srd-about.png`:  保持不变
 {% endnote %}
 
 ## 参考
