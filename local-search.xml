@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>picGo免费的图床上传软件</title>
+    <link href="/2022/04/14/picGo%E5%85%8D%E8%B4%B9%E7%9A%84%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2022/04/14/picGo%E5%85%8D%E8%B4%B9%E7%9A%84%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0%E8%BD%AF%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="picGo"><a href="#picGo" class="headerlink" title="picGo"></a>picGo</h2><ul><li><a href="https://github.com/Molunerfinn/PicGo">picGo github</a></li><li><a href="https://picgo.github.io/PicGo-Doc/zh/guide/#%E5%BA%94%E7%94%A8%E6%A6%82%E8%BF%B0">文档</a></li></ul><h2 id="picgo上传工具"><a href="#picgo上传工具" class="headerlink" title="picgo上传工具"></a>picgo上传工具</h2><ul><li><a href="https://github.com/PicGo/PicGo-Core">PicGo-Core</a></li><li><a href="https://picgo.github.io/PicGo-Core-Doc/">PicGo-Core 文档</a></li></ul><h2 id="对picGo的分析"><a href="#对picGo的分析" class="headerlink" title="对picGo的分析"></a>对picGo的分析</h2><ul><li><a href="https://www.jianshu.com/p/980fcf97ddea">Github图床使用</a></li><li><a href="https://docs.github.com/cn/rest/reference/repos#contents">github开发者网站</a></li><li><a href="https://github.com/octokit/core.js#readme">octokit</a> 用js调用接口的sdk</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>图片上传</tag>
+      
+      <tag>工具</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>CICD</title>
     <link href="/2022/03/24/%E6%8A%80%E6%9C%AF/CICD/"/>
     <url>/2022/03/24/%E6%8A%80%E6%9C%AF/CICD/</url>
@@ -230,7 +259,7 @@
     <link href="/2021/12/03/%E5%B7%A5%E5%85%B7/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     <url>/2021/12/03/%E5%B7%A5%E5%85%B7/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     
-    <content type="html"><![CDATA[<h2 id="对象存储"><a href="#对象存储" class="headerlink" title="对象存储"></a>对象存储</h2><ul><li><a href="https://www.qingcloud.com/">qingcloud</a></li></ul><h2 id="图片相关"><a href="#图片相关" class="headerlink" title="图片相关"></a>图片相关</h2><h3 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h3><ul><li><a href="https://tinify.cn/">tinify</a> （大于5m需要付费）</li><li><a href="https://docsmall.com/image-compress">docsmall</a></li></ul><h2 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h2><ul><li><a href="https://web.umeng.com/main.php?c=site&a=show">友盟</a></li><li>百度</li></ul><h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><ul><li><a href="https://valine.js.org/">valine</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="对象存储"><a href="#对象存储" class="headerlink" title="对象存储"></a>对象存储</h2><ul><li><a href="https://www.qingcloud.com/">qingcloud</a></li></ul><h2 id="图片相关"><a href="#图片相关" class="headerlink" title="图片相关"></a>图片相关</h2><ul><li>图传上传免费<a href="https://github.com/Molunerfinn/PicGo">PicGo</a></li></ul><h3 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h3><ul><li><a href="https://tinify.cn/">tinify</a> （大于5m需要付费）</li><li><a href="https://docsmall.com/image-compress">docsmall</a></li></ul><h2 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h2><ul><li><a href="https://web.umeng.com/main.php?c=site&a=show">友盟</a></li><li>百度</li></ul><h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><ul><li><a href="https://valine.js.org/">valine</a></li></ul>]]></content>
     
     
     <categories>
@@ -485,9 +514,9 @@
     
     <tags>
       
-      <tag>工具</tag>
-      
       <tag>技术</tag>
+      
+      <tag>工具</tag>
       
       <tag>抓包</tag>
       
