@@ -24,7 +24,7 @@
 <meta property="og:description" content="背景折腾了一晚上 在网上找了神作塞尔达荒野之息的高清图片，更换了博客的banner图，放在了博客的静态资源下面 部署后发现图片很大，加载特别慢 so, 灵机一动使用了在线压缩工具tinify对图片进行压缩（尝试几次发现压缩效果已经不是很明显了，图片依然很大）。内心os: 王德发? 熬不住了先睡了。 第二天早上来决定使用CDN图片，首先想到的是七牛云，但是七牛云每月10G流量，可是地址只能使用30天">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-03T14:21:24.000Z">
-<meta property="article:modified_time" content="2022-04-15T11:02:29.039Z">
+<meta property="article:modified_time" content="2022-04-21T06:55:59.545Z">
 <meta property="article:author" content="moyuderen">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="CDN">
@@ -218,7 +218,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      6 分钟
     </span>
   
 
@@ -259,7 +259,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022-04-15 11:02:29
+                  本文最后更新于：2022-04-21 06:55:59
                 
               </p>
             
@@ -301,6 +301,11 @@
             <p>解析 <code>https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/srd-about.png</code></p><ol><li><code>https://github.com/</code> 被替换为 <code>https://cdn.jsdelivr.net/gh/</code></li><li><code>moyuderen</code> 保持不变</li><li><code>CDN</code> 保持不变</li><li><code>blob</code> 删除二进制的目录</li><li><code>main</code>:  删除分支名称</li><li><code>/moyuderen/blog/srd-about.png</code>:  保持不变</li></ol>
           </div>
 
+<h2 id="自己的图床web工具-github-cdn"><a href="#自己的图床web工具-github-cdn" class="headerlink" title="自己的图床web工具 github-cdn"></a>自己的图床web工具 <a target="_blank" rel="noopener" href="https://cdn.moyuderen.fun/">github-cdn</a></h2><ul>
+<li>基于<a target="_blank" rel="noopener" href="https://docs.github.com/cn/rest/reference/repos#create-or-update-file-contents">github api</a></li>
+<li>基于<a target="_blank" rel="noopener" href="https://github.com/octokit/core.js#readme">octokit</a></li>
+<li>支持github本身的cdn地址和 jsdelivr的cdn地址</li>
+</ul>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/?docs=gh">jsdelivr官网</a></li>
 <li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1847396">Jsdelivr+Github = 免费CDN??</a></li>

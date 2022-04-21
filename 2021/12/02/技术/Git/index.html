@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://moyuderen.github.io/2021/12/02/%E6%8A%80%E6%9C%AF/Git/config.png">
 <meta property="og:image" content="https://moyuderen.github.io/2021/12/02/%E6%8A%80%E6%9C%AF/Git/test-t.png">
 <meta property="article:published_time" content="2021-12-02T12:38:47.000Z">
-<meta property="article:modified_time" content="2022-04-15T11:02:29.039Z">
+<meta property="article:modified_time" content="2022-04-21T06:55:59.541Z">
 <meta property="article:author" content="moyuderen">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
@@ -215,7 +215,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      6.6k 字
+      7.2k 字
     </span>
   
 
@@ -224,7 +224,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      21 分钟
+      23 分钟
     </span>
   
 
@@ -265,7 +265,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022-04-15 11:02:29
+                  本文最后更新于：2022-04-21 06:55:59
                 
               </p>
             
@@ -466,6 +466,11 @@
 <p>  原因：重置了密码或拉取代码时输错密码导致操作失败，但再次登录时未再弹出重新输入密码界面。</p>
 <p>  解决方案：在git控制台输入以下命令，然后git clone 时在弹出的界面正确输入账户名和密码即可。</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --system --<span class="hljs-built_in">unset</span> credential.helper<br>git config --global credential.helper store<br></code></pre></td></tr></table></figure></li>
+<li><p>git pull 报错</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash">hint: You have divergent branches and need to specify how to reconcile them.<br>hint: You can <span class="hljs-keyword">do</span> so by running one of the following commands sometime before<br>hint: your next pull:<br>hint: <br>hint:   git config pull.rebase <span class="hljs-literal">false</span>  <span class="hljs-comment"># merge</span><br>hint:   git config pull.rebase <span class="hljs-literal">true</span>   <span class="hljs-comment"># rebase</span><br>hint:   git config pull.ff only       <span class="hljs-comment"># fast-forward only</span><br>hint: <br>hint: You can replace <span class="hljs-string">&quot;git config&quot;</span> with <span class="hljs-string">&quot;git config --global&quot;</span> to <span class="hljs-built_in">set</span> a default<br>hint: preference <span class="hljs-keyword">for</span> all repositories. You can also pass --rebase, --no-rebase,<br>hint: or --ff-only on the <span class="hljs-built_in">command</span> line to override the configured default per<br>hint: invocation.<br>fatal: Need to specify how to reconcile divergent branches.<br></code></pre></td></tr></table></figure>
+
+<p>  解决方案：</p>
+  <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs awk">git fetch<br>git merge remotes<span class="hljs-regexp">/origin/u</span>ploader  <br><span class="hljs-regexp">//</span> 解决冲突<br>git push<br></code></pre></td></tr></table></figure></li>
 </ul>
 <h3 id="参考文章-1"><a href="#参考文章-1" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/q13554515812/article/details/83506172">配置多个Git账号</a></li>
