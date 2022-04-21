@@ -90,6 +90,12 @@ so, 灵机一动使用了在线压缩工具[tinify](https://tinify.cn/)对图片
 6. `/moyuderen/blog/srd-about.png`:  保持不变
 {% endnote %}
 
+## 自己的图床web工具 [github-cdn](https://cdn.moyuderen.fun)
+
+- 基于[github api](https://docs.github.com/cn/rest/reference/repos#create-or-update-file-contents)
+- 基于[octokit](https://github.com/octokit/core.js#readme)
+- 支持github本身的cdn地址和 jsdelivr的cdn地址
+
 ## 参考
 
 1. [jsdelivr官网](https://www.jsdelivr.com/?docs=gh)
