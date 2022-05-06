@@ -196,6 +196,318 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/12/02/Git/git%20cherry%20pick/" target="_self">
+          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="git cherry pick">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/12/02/Git/git%20cherry%20pick/" target="_self">
+          git cherry pick
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/12/02/Git/git%20cherry%20pick/" target="_self">
+          
+          
+            
+          
+          git cherry pick如果你在使用 git 进行多人协作的代码管理，合并代码（ git merge ）的操作你一定不陌生。 git merge 会将指定分支的所有提交历史合并到当前所在的分支，它的合并单位是“分支”。但有的时候，我只想取某个分支的某几个提交的内容来合并。
+遇到这种操作需求，我们可以使用 cherry-pick 命令，它是以“提交”为单位的合并，可以帮助你安全快速地达到目的。
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-02 12:38" pubdate>
+              2021-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Git/">Git</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/12/02/Git/git%20revert/" target="_self">
+          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="git revert">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/12/02/Git/git%20revert/" target="_self">
+          git revert
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/12/02/Git/git%20revert/" target="_self">
+          
+          
+            
+          
+          git revert用法主要用途revert 用于线上回滚代码
+原理
+revert可以回滚指定提交，并产生一个新的提交 eg: revert_commit_id
+由于revert之后产生了相反的提交，原来的提交会丢失，所以要回复revert的提交，可以把revert_commit_id再次revert
+
+与reset区别
+ 待完成
+
+
+引用资料
+
+实际如何操作开发背景主要分支
+main (线上主要
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-02 12:38" pubdate>
+              2021-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Git/">Git</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/12/02/Git/git%20%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%A1%88/" target="_self">
+          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="git 代码回滚的几种方案">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/12/02/Git/git%20%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%A1%88/" target="_self">
+          git 代码回滚的几种方案
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/12/02/Git/git%20%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%A1%88/" target="_self">
+          
+          
+            
+          
+          git 代码回滚的几种方案git reset –hard commit_id1 加 git cherry-pick commit_id2 commit_id3a -&gt; b -&gt; c -&gt; d
+要删除b的提交
+123451、git reset --hard a #回退到出错版本前一个commit2、git cherry-pick c, d #将某次commit的更改应用到当前版本(
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-02 12:38" pubdate>
+              2021-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Git/">Git</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/12/02/Git/git%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/" target="_self">
+          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="git 工作中解决分支合并冲突">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/12/02/Git/git%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/" target="_self">
+          git 工作中解决分支合并冲突
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/12/02/Git/git%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/" target="_self">
+          
+          
+            
+          
+          feature分支开发，合并时解决冲突(防止污染分支代码或者线上代码)
+fearure分支merge到develop分支冲突
+  12345678910# 本地操作git checkout developgit pull ## 最新代码git merge feature## 解决冲突#...git add .git commit -m &#x27;ci: 解决冲突&#x27;git push
+fe
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-02 12:38" pubdate>
+              2021-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Git/">Git</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/12/02/Git/git%E6%93%8D%E4%BD%9C/" target="_self">
+          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="git操作">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/12/02/Git/git%E6%93%8D%E4%BD%9C/" target="_self">
+          git操作
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/12/02/Git/git%E6%93%8D%E4%BD%9C/" target="_self">
+          
+          
+            
+          
+          git操作
+查看所有分支git branch -a
+
+查看远程分支git branch -r
+
+查看本地分支所关联的远程分支git branch -vv
+
+gitk 查看分支情况 会打卡GUI界面gitk
+
+
+修改上次提交描述git commit --amend
+git修改本地和远程分支名称
+方法一
+
+123456789101112# 本地分支重命名git branch -m oldName ne
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-02 12:38" pubdate>
+              2021-12-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Git/">Git</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Git/">Git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/12/02/%E6%8A%80%E6%9C%AF/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" target="_self">
           <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="科学上网">
         </a>
@@ -505,140 +817,11 @@ censtos 7 安装ss 支持aes-2
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/" target="_self">
-          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="搭建博客记录">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/" target="_self">
-          搭建博客记录
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/" target="_self">
-          
-          
-            
-          
-          准备工作Hexo官网
-按照文档操作即可 (生成一个blog工程)
-
-github
-注册一个github账号（大家应该人手多个了-。-|||）
-创建一个新的仓库命名为youUserName.github.io
-把blog工程和youUserName.github.io远端仓库关联
-
-困局，更改了md页面无法自动刷新
-解决方案：安装hexo-browsersync插件，页面会自动刷新
-
-github-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-01 11:47" pubdate>
-              2021-12-01
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E5%BC%80%E9%80%9A%E5%8D%9A%E5%AE%A2%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/" target="_self">
-          <img src="https://static.zkqiang.cn/images/20191231163859.png-cover" srcset="/img/loading.gif" lazyload alt="开通博客啦！！！">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E5%BC%80%E9%80%9A%E5%8D%9A%E5%AE%A2%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/" target="_self">
-          开通博客啦！！！
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/01/%E6%9D%82%E8%AE%B0/%E5%BC%80%E9%80%9A%E5%8D%9A%E5%AE%A2%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/" target="_self">
-          
-          
-            
-          
-          开通博客啦以后可以在这里记录生活工作中的点点滴滴了，终于有了自己的小空间来自于
-使用Hexo和github-pages搭建
-主题使用Fluid主题，
-
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-01 09:47" pubdate>
-              2021-12-01
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><span class="page-number current">3</span>
+      <a class="extend prev" rel="prev" href="/page/2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#board">4</a><a class="extend next" rel="next" href="/page/4/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
