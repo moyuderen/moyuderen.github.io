@@ -18,7 +18,7 @@ index_img:
 
 解决平时工作查看接口数据
 
-[在线工具](https://json.moyuderen.fun/) 开箱即用
+[在线工具](https://moyuderen.github.io/json-editor/) 开箱即用
 
 [github地址](https://github.com/moyuderen/json-editor)
 
