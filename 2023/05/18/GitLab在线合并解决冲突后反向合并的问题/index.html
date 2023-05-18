@@ -16,37 +16,20 @@
   <meta name="description" content="">
   <meta name="author" content="moyuderen">
   <meta name="keywords" content="">
-  <meta name="description" content="攻略收集  初始之塔 19个 双子山之塔 61个 哈特诺之塔 68个 拉聂耳之塔 60个 阿卡莱之塔 58个 费罗尼之塔 56个 湖之塔 90个 荒野之塔 71个 格鲁德之塔 34个 丘陵之塔 80个 塔邦挞之塔 37个 海布拉之塔 73个 森林之塔 35个 奥尔汀之塔 45个 平原之塔 113个 获取方式 苹果树，遇到3棵挨着的苹果树的话，让3棵树上的苹果位置相同，每棵树剩下一个苹果。  祭祀的">
+  <meta name="description" content="项目背景开发项目的时候，使用gitLab合并功能分支feature到test分支上的时候，出现了Conflicts，在线解决冲突之后，点击解决合并，结果反向的把test的分支合并到了feature功能分支!!! 后果导致test分支没有提测的代码合并到了feature分支，分支合并master的时候导致无需上线代码合到master分支，造成线上事故 解决方案方法一临时分支替代法：分支feature">
 <meta property="og:type" content="article">
-<meta property="og:title" content="塞尔达传说-荒野之息（呀哈哈篇）">
-<meta property="og:url" content="https://moyuderen.github.io/2021/12/07/%E6%B8%B8%E6%88%8F/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E8%8D%92%E9%87%8E%E4%B9%8B%E6%81%AF/index.html">
+<meta property="og:title" content="GitLab 在线合并解决冲突后反向合并的问题">
+<meta property="og:url" content="https://moyuderen.github.io/2023/05/18/GitLab%E5%9C%A8%E7%BA%BF%E5%90%88%E5%B9%B6%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E5%90%8E%E5%8F%8D%E5%90%91%E5%90%88%E5%B9%B6%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="鱼池子">
-<meta property="og:description" content="攻略收集  初始之塔 19个 双子山之塔 61个 哈特诺之塔 68个 拉聂耳之塔 60个 阿卡莱之塔 58个 费罗尼之塔 56个 湖之塔 90个 荒野之塔 71个 格鲁德之塔 34个 丘陵之塔 80个 塔邦挞之塔 37个 海布拉之塔 73个 森林之塔 35个 奥尔汀之塔 45个 平原之塔 113个 获取方式 苹果树，遇到3棵挨着的苹果树的话，让3棵树上的苹果位置相同，每棵树剩下一个苹果。  祭祀的">
+<meta property="og:description" content="项目背景开发项目的时候，使用gitLab合并功能分支feature到test分支上的时候，出现了Conflicts，在线解决冲突之后，点击解决合并，结果反向的把test的分支合并到了feature功能分支!!! 后果导致test分支没有提测的代码合并到了feature分支，分支合并master的时候导致无需上线代码合到master分支，造成线上事故 解决方案方法一临时分支替代法：分支feature">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-1.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-2.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-3.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-4.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-5.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-6.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-7.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-8.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-9.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-10.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-11.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-12.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-13.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-14.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-15.jpg">
-<meta property="article:published_time" content="2021-12-07T10:25:49.000Z">
-<meta property="article:modified_time" content="2023-05-18T09:29:12.499Z">
+<meta property="article:published_time" content="2023-05-18T16:09:39.000Z">
+<meta property="article:modified_time" content="2023-05-18T09:29:12.483Z">
 <meta property="article:author" content="moyuderen">
-<meta property="article:tag" content="Games">
-<meta property="article:tag" content="游戏">
+<meta property="article:tag" content="GIT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-1.jpg">
   
-  <title>塞尔达传说-荒野之息（呀哈哈篇） - 鱼池子</title>
+  <title>GitLab 在线合并解决冲突后反向合并的问题 - 鱼池子</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -204,7 +187,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="塞尔达传说-荒野之息（呀哈哈篇）">
+            <span class="h2" id="subtitle" title="GitLab 在线合并解决冲突后反向合并的问题">
               
             </span>
 
@@ -214,8 +197,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-12-07 10:25" pubdate>
-        2021-12-07 10:25:49
+      <time datetime="2023-05-18 16:09" pubdate>
+        2023-05-18 16:09:39
       </time>
     </span>
   
@@ -225,7 +208,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      866 字
+      2.1k 字
     </span>
   
 
@@ -234,7 +217,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3 分钟
+      7 分钟
     </span>
   
 
@@ -271,7 +254,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">塞尔达传说-荒野之息（呀哈哈篇）</h1>
+            <h1 style="display: none">GitLab 在线合并解决冲突后反向合并的问题</h1>
             
               <p class="note note-info">
                 
@@ -280,67 +263,36 @@
               </p>
             
             <div class="markdown-body">
-              <h2 id="攻略收集"><a href="#攻略收集" class="headerlink" title="攻略收集"></a>攻略收集</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=3&id=2065912094&auto=1&height=66"></iframe>
+              <h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>开发项目的时候，使用gitLab合并功能分支feature到test分支上的时候，出现了Conflicts，在线解决冲突之后，点击解决合并，结果反向的把test的分支合并到了feature功能分支!!!</p>
+<h2 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h2><p>导致test分支没有提测的代码合并到了feature分支，分支合并master的时候导致无需上线代码合到master分支，造成线上事故</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>临时分支替代法：分支feature要合并到test分支，且出现了冲突，可以先从feature分支拉一个临时分支feature_temp，用临时分支feature_temp合并到test分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">git checkout feature //先切换到feature 分支<br>git checkout -b feature_temp //拉出来新的分支<br>git push origin feature_temp //推送到远端<br>git branch --set-upstream-to=origin/feature_temp <br></code></pre></td></tr></table></figure>
 
-<h3 id="初始之塔-19个"><a href="#初始之塔-19个" class="headerlink" title="初始之塔 19个"></a>初始之塔 19个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-1.jpg" srcset="/img/loading.gif" lazyload alt="初始之塔"></p>
-<h3 id="双子山之塔-61个"><a href="#双子山之塔-61个" class="headerlink" title="双子山之塔 61个"></a>双子山之塔 61个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-2.jpg" srcset="/img/loading.gif" lazyload alt="双子山之塔"></p>
-<h3 id="哈特诺之塔-68个"><a href="#哈特诺之塔-68个" class="headerlink" title="哈特诺之塔 68个"></a>哈特诺之塔 68个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-3.jpg" srcset="/img/loading.gif" lazyload alt="哈特诺之塔"></p>
-<h3 id="拉聂耳之塔-60个"><a href="#拉聂耳之塔-60个" class="headerlink" title="拉聂耳之塔 60个"></a>拉聂耳之塔 60个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-4.jpg" srcset="/img/loading.gif" lazyload alt="拉聂耳之塔"></p>
-<h3 id="阿卡莱之塔-58个"><a href="#阿卡莱之塔-58个" class="headerlink" title="阿卡莱之塔 58个"></a>阿卡莱之塔 58个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-5.jpg" srcset="/img/loading.gif" lazyload alt="阿卡莱之塔"></p>
-<h3 id="费罗尼之塔-56个"><a href="#费罗尼之塔-56个" class="headerlink" title="费罗尼之塔 56个"></a>费罗尼之塔 56个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-6.jpg" srcset="/img/loading.gif" lazyload alt="费罗尼之塔"></p>
-<h3 id="湖之塔-90个"><a href="#湖之塔-90个" class="headerlink" title="湖之塔 90个"></a>湖之塔 90个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-7.jpg" srcset="/img/loading.gif" lazyload alt="湖之塔"></p>
-<h3 id="荒野之塔-71个"><a href="#荒野之塔-71个" class="headerlink" title="荒野之塔 71个"></a>荒野之塔 71个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-8.jpg" srcset="/img/loading.gif" lazyload alt="荒野之塔"></p>
-<h3 id="格鲁德之塔-34个"><a href="#格鲁德之塔-34个" class="headerlink" title="格鲁德之塔 34个"></a>格鲁德之塔 34个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-9.jpg" srcset="/img/loading.gif" lazyload alt="格鲁德之塔"></p>
-<h3 id="丘陵之塔-80个"><a href="#丘陵之塔-80个" class="headerlink" title="丘陵之塔 80个"></a>丘陵之塔 80个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-10.jpg" srcset="/img/loading.gif" lazyload alt="丘陵之塔"></p>
-<h3 id="塔邦挞之塔-37个"><a href="#塔邦挞之塔-37个" class="headerlink" title="塔邦挞之塔 37个"></a>塔邦挞之塔 37个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-11.jpg" srcset="/img/loading.gif" lazyload alt="塔邦挞之塔"></p>
-<h3 id="海布拉之塔-73个"><a href="#海布拉之塔-73个" class="headerlink" title="海布拉之塔 73个"></a>海布拉之塔 73个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-12.jpg" srcset="/img/loading.gif" lazyload alt="海布拉之塔"></p>
-<h3 id="森林之塔-35个"><a href="#森林之塔-35个" class="headerlink" title="森林之塔 35个"></a>森林之塔 35个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-13.jpg" srcset="/img/loading.gif" lazyload alt="森林之塔"></p>
-<h3 id="奥尔汀之塔-45个"><a href="#奥尔汀之塔-45个" class="headerlink" title="奥尔汀之塔 45个"></a>奥尔汀之塔 45个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-14.jpg" srcset="/img/loading.gif" lazyload alt="奥尔汀之塔"></p>
-<h3 id="平原之塔-113个"><a href="#平原之塔-113个" class="headerlink" title="平原之塔 113个"></a>平原之塔 113个</h3><p><img src="https://cdn.jsdelivr.net/gh/moyuderen/CDN/moyuderen/blog/yahaha/yahaha-15.jpg" srcset="/img/loading.gif" lazyload alt="平原之塔"></p>
-<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><ol>
-<li><p>苹果树，遇到3棵挨着的苹果树的话，让3棵树上的苹果位置相同，每棵树剩下一个苹果。</p>
-</li>
-<li><p>祭祀的小雕像，有的雕像底下有个托盘，把苹果放进去就行。</p>
-</li>
-<li><p>追踪花花，看到一朵白色的花，过去碰它它会消失，在另一个地方出现，继续追踪，记得是5次。</p>
-</li>
-<li><p>数花朵，遇到花朵，有一支的，有2支的，按照顺序去碰，每碰对一次花就会变色，5次。</p>
-</li>
-<li><p>有个地方在悬崖边，悬崖边上有两棵树，需要在山坡上方滑草通过两棵树。</p>
-</li>
-<li><p>石球入坑，路上有的地方有坑，附近的高出有石球的话，推到坑里，也有雪球的。</p>
-</li>
-<li><p>跳入水中，水里有一圈荷叶似的圈圈，从高处跳到圈里。</p>
-</li>
-<li><p>投石入圈，水里有一圈石头，一般在桥上，举起石头投进圈里。</p>
-</li>
-<li><p>射箭盾牌，卡卡利科村的村口大门上，有个类似牌匾的东西，上面已经被射了箭，再射上去一支箭就行。</p>
-</li>
-<li><p>射气球，坚果，找到一个木桩，上面画着一个树叶，站上去，附近空中会出现气球，或者坚果在飞，射中它，不好找的用黄色暂停技能或者红色磁铁技能扫视一下，人不要从木桩上下去，下去之后气球会消失。</p>
-</li>
-<li><p>还是那个木桩，站上去会发射一个光球，再限制时间内到达光球位置即可。</p>
-</li>
-<li><p>还利亚大桥的某个桥墩的边沿，有一支木棍，捡起来是呀哈哈。</p>
-</li>
-<li><p>看到一堆枯草点燃它，有时候是石头，举起来就行。</p>
-</li>
-<li><p>最常见的石圈，向缺石头的方向找，有石头，捡回来放到石圈的位置。</p>
-</li>
-<li><p>有个废弃的训练场，在两个屋子里有石头，捡起附近的石头让两个屋里的石头摆放位置一样就行。</p>
-</li>
-<li><p>类似磁铁的方块阵，用磁铁技能搜索附近的铁块，让两个方块阵的布局一样就行。</p>
-</li>
-<li><p>有的水里有铁球，用磁铁技能把铁球吸起来放到井里，有的是让3个铁球一起放到石柱上。</p>
-</li>
-<li><p>有一个平原的废弃房子周围，有栅栏，骑马跳过几个栅栏就会有呀哈哈。</p>
-</li>
-<li><p>有个地方的路上有射箭的靶子，把它都用弓箭射碎，路是一个圈，大概8/9个靶子。</p>
-</li>
-</ol>
-<h2 id="网上攻略"><a href="#网上攻略" class="headerlink" title="网上攻略"></a>网上攻略</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.gamersky.com/z/zeldabotw/">游明星空-塞尔达荒野之息专区</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.nshome.com.cn/zelda17/203.html">ns之家-900个呀哈哈</a></li>
-</ul>
+<p>然后再gitlab界面上面选择feature_temp分支去做合并操作。 点击<code>Resove Conflicts</code>，选择要留下的版本，点击<code>merge</code>合并</p>
+<p>此时test分支合并到了feature_temp分支；<em><strong>同时test分支也就有了feature分支的代码！！！（解决冲突并且完成合并）</strong></em></p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><div class="note note-warning">
+            <p>例子：feature分支要合到test分支，使用<code>Resove Conflicts</code>在线操作，解决冲突，点就<code>merge</code>按钮；<br>实际先执行了<code>Merge branch &#39;test&#39; into &#39;feature&#39;</code>，<br>然后执行了<code>Merge branch &#39;conf2-tmp&#39; into &#39;test&#39;</code>来解决冲突，<br>（所以在test分支的提交记录会看到<code>Merge branch &#39;conf2-tmp&#39; into &#39;test&#39;</code>和<code>Merge branch &#39;test&#39; into &#39;feature&#39;</code>两天提交记录）</p>
+          </div>
+
+<div class="note note-danger">
+            <p>但是在实际操作中test分支直接merge到feature分支会造成feature分支被污染；</p>
+          </div>
+
+<div class="note note-success">
+            <p>所以新建一个feature_tmp分支（来自于feature分支，带着feature分支代码）,执行<code>Resove Conflicts</code>操作来解决冲突合并代码<br>执行了<code>Merge branch &#39;test&#39; into &#39;feature_tmp&#39;</code>, 把test分支合并到feature_tmp<br>再执行了<code>Merge branch &#39;feature_tmp&#39; into &#39;test&#39;</code>来解决冲突，</p><p>此时feature_tmp携带了test分支的代码（受到污染，但是是备份分支则没有关系），test分支也携带了feature_tmp分支的代码，即使feature的代码，间接的完成了冲突解决和合并</p><p>feature分支也没必要在合到test分支，因为test分支已经携带了feature的代码</p>
+          </div>
+
+<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p> 回滚补救法：设feature分支要合并到test分支，且出现了冲突，合并完成后，对feature分支做回滚操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">log</span> //找到上一个版本的commitID<br>git reset --hard commitID  //强制回退本地分支<br>git push origin HEAD --force 或者 git push -f origin feature //强制回退远程<br></code></pre></td></tr></table></figure>
+
+<div class="note note-warning">
+            <ol><li>远程master分支的<code>git push -f origin</code>会推不上去，可能是master分支设置了分支保护，关闭强制push的保护，强行push</li><li><code>git push -f origin</code>操作如果不是自己的featur分支，是测试分支test或者主分支master可能会冲掉别人的代码！！！！</li></ol>
+          </div>
+
+<h2 id="正常解决冲突操作方法（local-解决）"><a href="#正常解决冲突操作方法（local-解决）" class="headerlink" title="正常解决冲突操作方法（local 解决）"></a>正常解决冲突操作方法（local 解决）</h2><p>用较为纯净的分支合并到有其他功能分支；如feature分支合并到test分支解决冲突，或者master分支合并到feature分支解决冲突</p>
+<h3 id="如是是feature分支和test分支冲突"><a href="#如是是feature分支和test分支冲突" class="headerlink" title="如是是feature分支和test分支冲突"></a>如是是feature分支和test分支冲突</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 本地操作</span><br>git checkout <span class="hljs-built_in">test</span> <span class="hljs-comment"># 切换到test分支</span><br>git pull <span class="hljs-comment"># 拉取最新代码</span><br>git merge feature <span class="hljs-comment"># 将feature分支合并到test分支</span><br><br><span class="hljs-comment"># .</span><br><span class="hljs-comment"># .</span><br><span class="hljs-comment"># 在test分支解决冲突后，执行git add. ; git commit -m &#x27;conflict: 解决冲突&#x27; 提交代码本金代码</span><br><br>git push <span class="hljs-comment"># 把本地test分支推送到代码仓库</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="如果是feature分支和master分支冲突"><a href="#如果是feature分支和master分支冲突" class="headerlink" title="如果是feature分支和master分支冲突"></a>如果是feature分支和master分支冲突</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 本地操作</span><br>git checkout feature <span class="hljs-comment"># 切换到feature分支</span><br>git pull <span class="hljs-comment"># 拉取最新代码</span><br>git merge master <span class="hljs-comment"># 将master分支合并到feature分支</span><br><br><span class="hljs-comment"># .</span><br><span class="hljs-comment"># .</span><br><span class="hljs-comment"># 在feature分支解决冲突后，执行git add. ; git commit -m &#x27;conflict: 解决冲突&#x27; 提交代码本金代码</span><br><br>git push <span class="hljs-comment"># 把本地feature分支推送到代码仓库</span><br><br><span class="hljs-comment"># 然后再gitlab远端执行merge操作，完成代码合并</span><br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
@@ -350,9 +302,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E6%B8%B8%E6%88%8F/%E5%A1%9E%E5%B0%94%E8%BE%BE%E8%8D%92%E9%87%8E%E4%B9%8B%E6%81%AF/">塞尔达荒野之息</a>
+                      <a class="hover-with-bg" href="/categories/Diary/">Diary</a>
                     
                   </div>
                 
@@ -360,9 +310,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Games/">Games</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+                      <a class="hover-with-bg" href="/tags/GIT/">GIT</a>
                     
                   </div>
                 
@@ -379,18 +327,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/12/14/%E6%8A%80%E6%9C%AF/pnpm/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">pnpm</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/12/03/%E5%B7%A5%E5%85%B7/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/">
-                        <span class="hidden-mobile">常用工具</span>
+                      <a href="/2022/08/04/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF%E5%AF%B9%E6%97%B6%E9%97%B4utc%E7%9A%84%E5%A4%84%E7%90%86/">
+                        <span class="hidden-mobile">前端对时间utc的处理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
