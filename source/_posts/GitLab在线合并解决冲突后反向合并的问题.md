@@ -111,3 +111,8 @@ git push # 把本地feature分支推送到代码仓库
 
 # 然后再gitlab远端执行merge操作，完成代码合并
 ```
+
+## 参考文章
+
+1. [巨坑的GitLab在线解决冲突(解决后做了反向合并代码的操作？）](https://segmentfault.com/a/1190000041546988)
+2. [GitLab 在线合并解决冲突后反向合并的问题](https://blog.51cto.com/u_15072920/4402018)
